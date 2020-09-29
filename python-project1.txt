@@ -1,0 +1,25 @@
+#!/usr/bin/python3
+
+print("content-type: text/html")
+print()
+
+
+import subprocess as sp
+import cgi
+
+y1 = cgi.FieldStorage()
+y2 = yo.getvalue("name1")
+y3 = yo.getvalue("firstname")
+y4 = yo.getvalue("version")
+print(y1+" "+y2+" "+y3+" ")
+cmd = "sudo docker run -dit --name {0} {1}:{2}".format(y1, y2, y3)
+
+output = sp.getstatusoutput(cmd)
+status = output[0]
+out = output[1]
+if(status == 0):
+    print("OS launched {}".format(y1))
+else:
+    print("some error : {}".format(out))
+
+

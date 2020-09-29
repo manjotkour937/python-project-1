@@ -1,0 +1,10 @@
+<form action="http://192.168.0.100/cgi-bin/python.py">
+	
+	Enter  Osname: <input type="text" name="name1" /> 
+	Enter  Imagename: <input type="text" name="firstname" /><br>
+	Enter version : <input type="text" name="version" />
+
+        <br />
+	<input type="submit">
+
+</form>
